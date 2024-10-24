@@ -224,34 +224,182 @@
         </p>
 
         <h2 id="monetizacion-app">Monetización de la App</h2>
-        <ul>
-            <li><strong>Comisión por Transacción:</strong> Se cobrará una pequeña comisión por cada transacción
-                realizada a través de la plataforma.</li>
-            <li><strong>Suscripción Premium:</strong> Los transportistas podrán acceder a funciones adicionales mediante
-                un sistema de suscripción mensual.</li>
-            <li><strong>Publicidad:</strong> Empresas relacionadas con el transporte o mudanzas podrán publicitarse en
-                la plataforma.</li>
-        </ul>
-
-        <h2 id="casos-excepcionales">Casos de Uso Alternativos o Excepcionales</h2>
         <p>
-            A continuación se describen algunos casos de uso alternativos o excepcionales, y cómo se manejarán en la
-            plataforma:
+            La aplicación <strong>Conectar Envíos</strong> busca generar ingresos mediante un enfoque que combine
+            comisiones
+            por transacción y un plan de suscripción premium. A continuación, se
+            detallan
+            las principales estrategias de monetización:
         </p>
         <ul>
-            <li><strong>Cancelación del envío sin comisión:</strong> Si un cliente intenta cancelar un envío para evitar
-                el pago de comisiones, se implementará un sistema de penalización para evitar abusos. El transportista y
-                el cliente deberán acordar la cancelación dentro de la plataforma, y se rastreará la actividad para
-                detectar patrones de comportamiento indebido.</li>
-            <li><strong>Falsas declaraciones de robo o pérdidas:</strong> En el caso de que un transportista alegue
-                haber sido víctima de un robo para encubrir la pérdida o robo de la mercancía, se integrarán mecanismos
-                como la verificación por GPS y requerimiento de pruebas adicionales (como fotos y documentación de la
-                denuncia ante las autoridades). Además, se incentivará el uso de seguros de envío.</li>
-            <li><strong>Transacciones fuera de la plataforma:</strong> Si los clientes intentan pagar en efectivo para
-                esquivar las comisiones, se aplicarán sanciones o bloqueos a transportistas y clientes involucrados. La
-                plataforma implementará un monitoreo de patrones de conducta y notificaciones de alerta para casos
-                sospechosos.</li>
+            <li><strong>Comisión por Transacción:</strong>
+                <ul>
+                    <li>Se aplicará una pequeña comisión sobre cada transacción realizada a través de la plataforma.
+                        Esta
+                        comisión será cobrada al <strong>transportista</strong> al momento de recibir el pago por el
+                        servicio.
+                    </li>
+                    <li><strong>Modelo de Pago:</strong> El cliente realizará el pago a través de <strong>Mercado
+                            Pago</strong>
+                        o mediante <strong>tarjeta de crédito o débito</strong>. Una vez que el transportista complete
+                        el
+                        servicio, podrá retirar sus ganancias, y en ese momento se le aplicará la comisión
+                        correspondiente.
+                    </li>
+                    <li><strong>Incentivo para el Plan Premium:</strong> La comisión estará diseñada de manera que,
+                        aunque sea
+                        competitiva, motive a los transportistas frecuentes a considerar la opción del plan premium para
+                        evitar
+                        cargos a futuro.
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Suscripción Premium:</strong>
+                <ul>
+                    <li>Los transportistas tendrán la opción de suscribirse a un <strong>plan premium</strong> con un
+                        cargo fijo
+                        mensual o anual. Este plan brindará beneficios adicionales:
+                    </li>
+                    <li><strong>Sin comisiones al retirar dinero:</strong> A diferencia del modelo estándar, los
+                        transportistas
+                        premium no estarán sujetos a comisiones al retirar el dinero de sus cuentas.
+                    </li>
+                    <li><strong>Funciones exclusivas:</strong> Los transportistas premium podrán acceder a
+                        <strong>features especiales</strong>, como mayor visibilidad en la plataforma, acceso
+                        prioritario a
+                        pedidos de alta demanda, reportes avanzados de sus ganancias, y herramientas para la
+                        optimización de
+                        rutas (detalles a confirmar).
+                    </li>
+                    <li><strong>Mayor límite de retiro:</strong> Se les ofrecerá la opción de realizar retiros más
+                        grandes sin
+                        restricciones de frecuencia o monto.
+                    </li>
+                    <li><strong>Costo del Plan:</strong> El precio del plan será competitivo y diseñado para atraer a
+                        transportistas que realizan múltiples trabajos al mes, haciéndolo más rentable en comparación
+                        con el
+                        modelo de comisión por transacción.
+                    </li>
+                </ul>
+            </li>
         </ul>
+
+
+        <h2 id="casos-excepcionales">Casos de Uso Alternativos o Excepcionales</h2>
+
+        <h3>1. Falsificación de Identidad del Transportista</h3>
+        <p>
+            <strong>Descripción:</strong> Un transportista se registra con información falsa o usa la cuenta de otra
+            persona
+            para ofrecer servicios de envío.
+        </p>
+        <p><strong>Solución Propuesta:</strong> Verificaciones de identidad obligatorias a través de documentos
+            oficiales o
+            integración con sistemas de verificación en línea, y verificación de antecedentes.</p>
+
+        <h3>2. Robo de Mercadería</h3>
+        <p>
+            <strong>Descripción:</strong> El transportista alega que le han robado la mercadería o, en su defecto,
+            roba el
+            envío y culpa a terceros.
+        </p>
+        <p><strong>Solución Propuesta:</strong> Sistema de seguros obligatorios para envíos de alto valor y rastreo
+            GPS
+            en tiempo real, junto con un sistema de revisión de incidentes y disputas.</p>
+
+        <h3>3. Cobro en Efectivo para Evadir Comisión</h3>
+        <p>
+            <strong>Descripción:</strong> El cliente y el transportista acuerdan realizar el pago en efectivo fuera
+            de la
+            plataforma, evitando la comisión.
+        </p>
+        <p><strong>Solución Propuesta:</strong> Penalizaciones para transportistas que no respeten el sistema de
+            cobros y
+            un sistema de reporte automático basado en indicadores sospechosos como usar la app pero siempre cancelar el
+            envio.</p>
+
+        <h3>4. Transportista Cancelando Repetidamente</h3>
+        <p>
+            <strong>Descripción:</strong> El transportista cancela trabajos repetidamente, afectando la experiencia
+            del
+            cliente.
+        </p>
+        <p><strong>Solución Propuesta:</strong> Penalizaciones o bloqueo temporal a transportistas con cancelaciones
+            excesivas sin justificación.</p>
+
+        <h3>5. Mal uso de la Plataforma por el Cliente</h3>
+        <p>
+            <strong>Descripción:</strong> Un cliente pide servicios de flete para transportar mercadería ilegal o
+            peligrosa.
+        </p>
+        <p><strong>Solución Propuesta:</strong> Términos y condiciones claros que prohíban el uso indebido, y un
+            sistema
+            de reporte para transportistas. Permitir a los transportistas denunciar cualquier pedido sospechoso
+            directamente desde la plataforma, sin penalizaciones si deciden no aceptar el trabajo por motivos de
+            seguridad o legales.</p>
+
+        <h3>6. Fallas en el Sistema de Rastreo en Tiempo Real</h3>
+        <p>
+            <strong>Descripción:</strong> El sistema de rastreo de la plataforma deja de funcionar durante un envío
+            importante.
+        </p>
+        <p><strong>Solución Propuesta:</strong> Notificaciones automáticas por errores en el sistema de rastreo y un
+            plan
+            de contingencia para contacto directo con el transportista.</p>
+
+        <h3>7. Pérdida de Datos o Ataques Cibernéticos</h3>
+        <p>
+            <strong>Descripción:</strong> Un ciberataque compromete la seguridad de los datos de los usuarios, como
+            información personal o financiera.
+        </p>
+        <p><strong>Solución Propuesta:</strong> Encriptación avanzada, autenticación multifactor (2FA) y copias de
+            seguridad automáticas para prevenir la pérdida de datos.</p>
+
+        <h3>8. Disputas sobre el Pago por Servicios No Completados</h3>
+        <p>
+            <strong>Descripción:</strong> Un cliente reporta que el envío no fue completado, pero el sistema ya ha
+            liberado el pago al transportista.
+        </p>
+        <p><strong>Solución Propuesta:</strong> Sistema de pago en depósito o escrow, donde los fondos se liberan
+            solo
+            después de que el cliente confirme la finalización del servicio.</p>
+
+        <h3>9. Interrupción del Servicio por Caídas del Servidor</h3>
+        <p>
+            <strong>Descripción:</strong> La plataforma experimenta una caída del servidor, afectando la experiencia
+            de
+            los usuarios.
+        </p>
+        <p><strong>Solución Propuesta:</strong> Sistema de alta disponibilidad con servidores redundantes y alertas
+            a
+            los usuarios si el servicio se interrumpe temporalmente.</p>
+
+        <h3>10. Manipulación de Calificaciones o Reseñas</h3>
+        <p>
+            <strong>Descripción:</strong> Transportistas o clientes intentan manipular el sistema de calificaciones
+            dejando reseñas falsas.
+        </p>
+        <p><strong>Solución Propuesta:</strong> Algoritmos que detecten patrones sospechosos y eliminación de
+            reseñas
+            fraudulentas.</p>
+
+        <h3>11. Transporte de Carga Prohibida o Dañina</h3>
+        <p>
+            <strong>Descripción:</strong> Un cliente solicita el transporte de materiales prohibidos por ley o
+            peligrosos.
+        </p>
+        <p><strong>Solución Propuesta:</strong> Definir una lista de materiales prohibidos y permitir a los
+            transportistas rechazar envíos sospechosos sin penalización.</p>
+
+        <h3>12. Cliente Reclamando Entrega No Realizada</h3>
+        <p>
+            <strong>Descripción:</strong> Un cliente reclama que el envío nunca llegó, pero el transportista dice
+            que lo
+            entregó.
+        </p>
+        <p><strong>Solución Propuesta:</strong> Pruebas de entrega obligatorias, como fotos con firma del receptor o
+            un
+            PIN que el cliente debe proporcionar al transportista.</p>
 
         <h2>Documentación Adicional</h2>
         <p>
