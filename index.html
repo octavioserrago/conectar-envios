@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conectar Envíos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1,
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 20px;
+        }
+
+        ul,
+        ol {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul li,
+        ol li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Conectar Envíos - Plataforma de envíos Freelance</h1>
+
+        <h2>Resumen Ejecutivo</h2>
+        <p>
+            Conectar Envíos es una aplicación que conecta a transportistas freelance con clientes que necesitan
+            enviar paquetes o realizar fletes. La plataforma permite a los transportistas ofrecer sus servicios de
+            manera
+            flexible, mientras los usuarios pueden obtener presupuestos y rastrear sus envíos en tiempo real. El
+            objetivo de la app es optimizar el proceso de envíos (más que nada los de gran tamaño como mudanzas o
+            compras grandes), ofreciendo una solución rápida y
+            accesible, aprovechando la economía freelance.
+        </p>
+
+        <h2>Roles de Usuario</h2>
+        <ul>
+            <li><strong>Cliente:</strong> Persona o empresa que necesita enviar un paquete o solicitar un flete.</li>
+            <li><strong>Transportista:</strong> Freelancer que ofrece sus servicios de transporte de paquetes o fletes a
+                través de la plataforma.</li>
+            <li><strong>Administrador:</strong> Usuario encargado de gestionar el sistema, moderar contenido avanzado,
+                gestionar cuentas, supervisar y administrar a los moderadores.</li>
+            <li><strong>Moderador:</strong> Usuario con privilegios para supervisar la actividad dentro de la
+                plataforma, incluyendo la moderación de reseñas, la revisión de disputas menores, y la vigilancia del
+                cumplimiento de las políticas de la app.</li>
+        </ul>
+
+        <h2>Flujo de la Aplicación</h2>
+        <ol>
+            <li><strong>Registro e Inicio de Sesión:</strong> Los usuarios (clientes y transportistas) se registran con
+                su correo electrónico o redes sociales.</li>
+            <li><strong>Publicación de Pedido:</strong> El cliente publica un pedido de envío, describiendo el paquete y
+                el destino.</li>
+            <li><strong>Ofertas de Transportistas:</strong> Los transportistas ven los pedidos disponibles y envían
+                ofertas con sus tarifas.</li>
+            <li><strong>Selección de Transportista:</strong> El cliente selecciona al transportista según el precio, la
+                reputación y la disponibilidad.</li>
+            <li><strong>Seguimiento:</strong> El cliente rastrea el envío en tiempo real hasta que llegue a su destino.
+            </li>
+            <li><strong>Calificación:</strong> Al finalizar el servicio, ambas partes se califican mutuamente para
+                fomentar la confianza en la plataforma.</li>
+        </ol>
+
+        <h2>Funcionalidades Clave</h2>
+        <ul>
+            <li><strong>Registro de usuarios:</strong> Registro de clientes y transportistas, con opciones de
+                verificación de identidad.</li>
+            <li><strong>Creación y gestión de pedidos:</strong> Los clientes pueden crear pedidos de flete con
+                descripción, fotos y detalles.</li>
+            <li><strong>Ofertas personalizadas:</strong> Los transportistas pueden enviar ofertas a los pedidos que les
+                interesen.</li>
+            <li><strong>Rastreo en tiempo real:</strong> Los clientes pueden seguir sus paquetes mediante
+                geolocalización.</li>
+            <li><strong>Calificaciones y reseñas:</strong> Sistema de calificaciones para mejorar la calidad de los
+                servicios.</li>
+            <li><strong>Notificaciones:</strong> Notificaciones en tiempo real para cambios de estado en los envíos.
+            </li>
+        </ul>
+
+        <h2>Interfaz de Usuario (UI)</h2>
+        <p>
+            La interfaz será intuitiva y moderna, con un diseño minimalista para facilitar la navegación tanto en
+            dispositivos móviles como en computadoras. Los clientes tendrán un panel para gestionar sus pedidos y
+            rastrearlos, mientras que los transportistas podrán acceder a una vista de ofertas disponibles, con
+            herramientas para aceptar trabajos y optimizar sus rutas.
+        </p>
+
+        <h2>Tecnología y Desarrollo</h2>
+        <ul>
+            <li><strong>Frontend:</strong> Se utilizarán tecnologías como HTML, CSS y JavaScript (React o Vue.js) para
+                crear una interfaz de usuario dinámica y responsiva.</li>
+            <li><strong>Backend:</strong> Para el servidor y lógica de negocio, se usará Node.js o Django (Python),
+                junto con una base de datos como PostgreSQL o MongoDB.</li>
+            <li><strong>Geolocalización:</strong> Integración de servicios de mapas como Google Maps API para el rastreo
+                en tiempo real.</li>
+            <li><strong>Notificaciones Push:</strong> Implementación de notificaciones push para mantener a los usuarios
+                informados sobre sus envíos.</li>
+            <li><strong>API REST:</strong> El backend expondrá una API para gestionar la interacción entre la app móvil
+                y el servidor.</li>
+        </ul>
+
+        <h2>Seguridad</h2>
+        <ul>
+            <li><strong>Autenticación segura:</strong> Implementación de OAuth 2.0 para el inicio de sesión con
+                verificación en dos pasos (2FA).</li>
+            <li><strong>Encriptación:</strong> Todos los datos sensibles se transmitirán de forma encriptada utilizando
+                HTTPS (SSL/TLS).</li>
+            <li><strong>Roles y permisos:</strong> Los transportistas, clientes y administradores tendrán roles
+                claramente definidos para evitar accesos no autorizados.</li>
+            <li><strong>Protección contra ataques:</strong> Se integrarán medidas contra ataques comunes como SQL
+                Injection y Cross-Site Scripting (XSS).</li>
+        </ul>
+
+        <h2>Competencia</h2>
+        <p>
+            En Argentina, los principales competidores en el mercado de envíos son <strong>UberFlash</strong>,
+            <strong>Mercado Envíos</strong> y <strong>Cabify Envíos</strong>. Sin embargo, estas plataformas suelen
+            centrarse en envíos pequeños y estandarizados, como paquetes que caben en un <strong>baúl</strong>. No
+            ofrecen soluciones adecuadas para transportes de mayor tamaño, como mudanzas o el traslado de artículos
+            voluminosos. Este tipo de servicio generalmente requiere la contratación de empresas independientes, lo cual
+            implica un proceso más tedioso y menos transparente en cuanto a tarifas y disponibilidad.
+            <strong>ConectarEnvíos</strong> se diferencia al ofrecer una plataforma en la que personas con vehículos
+            grandes, como camionetas o furgonetas, pueden ofrecer sus servicios para transportar objetos de mayor
+            tamaño. Esto permite a los usuarios no solo encontrar soluciones rápidas para mudanzas o envíos grandes,
+            sino también comparar precios de diferentes transportistas freelance, optimizando el tiempo y los costos.
+            Así, <strong>ConectarEnvíos</strong> llena un vacío en el mercado al conectar a transportistas y clientes de
+            manera flexible y eficiente.
+        </p>
+
+        <h2>Monetización de la App</h2>
+        <p>
+            Para asegurar la sostenibilidad y crecimiento de <strong>Conectar Envíos</strong>, se considerarán diversas
+            estrategias de monetización que beneficien a todos los usuarios y a la empresa. A continuación, se detallan
+            las principales opciones:
+        </p>
+        <ul>
+            <li><strong>Comisión por Transacción:</strong> Se cobrará un porcentaje de cada transacción realizada a
+                través de la plataforma, alineando los intereses de la app con los de los usuarios.</li>
+            <li><strong>Tarifas de Suscripción:</strong> Se ofrecerán planes de suscripción para transportistas,
+                brindando acceso a funciones premium y herramientas útiles.</li>
+            <li><strong>Tarifas por Características Adicionales:</strong> Se ofrecerán características premium, como
+                seguros de envío y soporte prioritario, bajo demanda.</li>
+        </ul>
+    </div>
+</body>
+
+</html>
