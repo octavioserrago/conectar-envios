@@ -210,23 +210,9 @@
         </div>
     </div>
 
-    <!-- Caso de Uso 10 -->
-    <div class="case-container">
-        <div class="case-title">Caso de Uso 10: Reclamo por Daños o Pérdida</div>
-        <p><strong>Descripción:</strong> El cliente debe poder realizar un reclamo si su paquete ha sido dañado o
-            perdido durante el proceso de envío.</p>
-        <div class="solution">
-            <p><strong>Solución:</strong> Se crea una opción en la plataforma para que el cliente pueda realizar un
-                reclamo
-                por daños o pérdida de su paquete. El cliente debe proporcionar detalles del envío y una foto del
-                paquete
-                dañado (si aplica). El sistema gestiona el reclamo y asigna un número de caso para su seguimiento.</p>
-        </div>
-    </div>
-
     <!-- Caso de Uso 11 -->
     <div class="case-container">
-        <div class="case-title">Caso de Uso 11: Solicitar Reprogramación de Entrega</div>
+        <div class="case-title">Caso de Uso 10: Solicitar Reprogramación de Entrega</div>
         <p><strong>Descripción:</strong> El cliente debe poder solicitar la reprogramación de una entrega si no
             puede
             recibir el paquete en la fecha originalmente programada.</p>
@@ -240,7 +226,7 @@
     </div>
 
     <div class="case-container">
-        <div class="case-title">Caso de Uso 12: Producto Dañado Durante el Transporte</div>
+        <div class="case-title">Caso de Uso 11: Producto Dañado Durante el Transporte</div>
         <p><strong>Descripción:</strong> En caso de que el producto enviado se dañe durante el transporte, el cliente y
             el transportista deben seguir un proceso para reportar y gestionar la situación, incluidas las
             responsabilidades y posibles compensaciones.</p>
@@ -257,7 +243,7 @@
     </div>
 
     <div class="case-container">
-        <div class="case-title">Caso de Uso 13: No Hay Quien Reciba el Paquete</div>
+        <div class="case-title">Caso de Uso 12: No Hay Quien Reciba el Paquete</div>
         <p><strong>Descripción:</strong> En caso de que el transportista llegue a la dirección de envío y no haya nadie
             disponible para recibir el paquete, y el cliente no responda, se debe tomar una acción adecuada para
             resolver la situación.</p>
@@ -274,19 +260,7 @@
     </div>
 
     <div class="case-container">
-        <div class="case-title">Caso de Uso 14: Reprogramación de Entrega</div>
-        <p><strong>Descripción:</strong> El cliente debe poder solicitar la reprogramación de la entrega si no está
-            disponible en el momento de la entrega o si necesita cambiar la fecha de la entrega.</p>
-        <div class="solution">
-            <p><strong>Solución:</strong> El cliente puede acceder a la opción de reprogramar la entrega en su panel de
-                seguimiento. Se le ofrecerán fechas y horarios alternativos según la disponibilidad del transportista.
-                Si el cliente reprograma la entrega, la plataforma actualizará la información del pedido y notificará al
-                transportista sobre el nuevo horario de entrega.</p>
-        </div>
-    </div>
-
-    <div class="case-container">
-        <div class="case-title">Caso de Uso 15: Modificación de Dirección de Entrega</div>
+        <div class="case-title">Caso de Uso 13: Modificación de Dirección de Entrega</div>
         <p><strong>Descripción:</strong> El cliente debe poder modificar la dirección de entrega de su paquete antes de
             que el transportista lo recoja.</p>
         <div class="solution">
@@ -298,7 +272,7 @@
     </div>
 
     <div class="case-container">
-        <div class="case-title">Caso de Uso 16: Calificación y Comentarios del Transportista</div>
+        <div class="case-title">Caso de Uso 14: Calificación y Comentarios del Transportista</div>
         <p><strong>Descripción:</strong> El cliente debe poder calificar al transportista después de cada entrega, y
             dejar comentarios para proporcionar retroalimentación sobre el servicio.</p>
         <div class="solution">
@@ -311,7 +285,7 @@
     </div>
 
     <div class="case-container">
-        <div class="case-title">Caso de Uso 17: Soporte de Emergencia para el Transportista</div>
+        <div class="case-title">Caso de Uso 15: Soporte de Emergencia para el Transportista</div>
         <p><strong>Descripción:</strong> Los transportistas deben tener acceso a un servicio de soporte de emergencia en
             caso de que enfrenten problemas durante la entrega, como accidentes, problemas con el vehículo, o cualquier
             situación que les impida completar la entrega.</p>
@@ -324,7 +298,7 @@
     </div>
 
     <div class="case-container">
-        <div class="case-title">Caso de Uso 18: Cambio de Método de Pago</div>
+        <div class="case-title">Caso de Uso 16: Cambio de Método de Pago</div>
         <p><strong>Descripción:</strong> El cliente debe poder cambiar el método de pago para el servicio de envío antes
             de que se procese el pago, utilizando Mercado Pago como plataforma de pagos.</p>
         <div class="solution">
@@ -338,7 +312,7 @@
 
 
     <div class="case-container">
-        <div class="case-title">Caso de Uso 19: Validación de Documentos del Transportista</div>
+        <div class="case-title">Caso de Uso 17: Validación de Documentos del Transportista</div>
         <p><strong>Descripción:</strong> Antes de aceptar un transportista en la plataforma, los documentos relevantes
             (como la cédula de identidad, los antecedentes penales, la VTV y el seguro) deben ser validados para
             asegurar que el transportista cumpla con los requisitos legales y de seguridad.</p>
@@ -351,6 +325,67 @@
         </div>
     </div>
 
+
+    <div class="case-container">
+        <div class="case-title">Caso de Uso 18: Verificación de Identidad en la Entrega</div>
+        <p><strong>Descripción:</strong> Antes de entregar un paquete, el transportista debe verificar la identidad del
+            receptor solicitando un DNI o una clave única, que el cliente puede visualizar en su app.</p>
+        <div class="solution">
+            <p><strong>Solución:</strong> Se implementa un sistema en la app del transportista que, antes de confirmar
+                la entrega, solicita al receptor ingresar un DNI o una clave única proporcionada por la plataforma. Esta
+                clave es generada automáticamente al momento de crear el envío y es visible solo para el cliente en su
+                app. El flujo sería el siguiente:</p>
+            <ul>
+                <li>El transportista selecciona el envío que desea entregar en su app.</li>
+                <li>El sistema solicita al receptor ingresar el DNI o la clave única.</li>
+                <li>Si la información ingresada coincide con la almacenada en el sistema, se confirma la entrega y se
+                    actualiza el estado del paquete a "Entregado".</li>
+                <li>Si la información no es válida, el sistema muestra un mensaje de error y no permite completar la
+                    entrega.</li>
+            </ul>
+            <p>Este proceso garantiza que el paquete sea recibido únicamente por el destinatario autorizado, mejorando
+                la seguridad del servicio.</p>
+        </div>
+    </div>
+
+    <div class="case-container">
+        <div class="case-title">Caso de Uso 19: Notificación Proactiva de Retrasos</div>
+        <p><strong>Descripción:</strong> El cliente debe recibir notificaciones automáticas si el transportista
+            experimenta retrasos debido a tráfico, condiciones climáticas o problemas técnicos.</p>
+        <div class="solution">
+            <p><strong>Solución:</strong> Se implementa un sistema de monitoreo en tiempo real que detecta retrasos en
+                las rutas asignadas al transportista. Si el tiempo estimado de llegada cambia significativamente, la
+                plataforma envía notificaciones al cliente indicando el motivo del retraso y un nuevo tiempo estimado de
+                entrega.
+            </p>
+        </div>
+    </div>
+
+    <div class="case-container">
+        <div class="case-title">Caso de Uso 20: Control de Entregas con Temperatura Regulada</div>
+        <p><strong>Descripción:</strong> Permitir a los clientes solicitar servicios especiales para envíos que
+            requieren temperatura controlada (como alimentos o productos farmacéuticos).</p>
+        <div class="solution">
+            <p><strong>Solución:</strong> Se agrega una opción en la creación de envíos para especificar requisitos
+                especiales como "Temperatura regulada". Los transportistas con vehículos equipados para este servicio
+                serán asignados automáticamente. La plataforma supervisará el cumplimiento mediante sensores de
+                temperatura conectados al sistema.</p>
+            <p><strong>Nota:</strong> Además, se solicitará siempre a los transportistas que detallen el estado o último
+                servicio técnico realizado al equipo de refrigeración, garantizando así que los envíos se realicen bajo
+                condiciones óptimas.</p>
+        </div>
+    </div>
+
+    <div class="case-container">
+        <div class="case-title">Caso de Uso 21: Programa de Recompensas</div>
+        <p><strong>Descripción:</strong> Ofrecer un sistema de recompensas para clientes frecuentes que utilicen la
+            plataforma regularmente.</p>
+        <div class="solution">
+            <p><strong>Solución:</strong> Se crea un programa de puntos donde cada envío genera puntos canjeables por
+                descuentos en futuros envíos. El sistema llevará un registro de los puntos acumulados y notificará al
+                cliente cuando tenga suficientes puntos para obtener un beneficio.</p>
+        </div>
+    </div>
 
 
 
