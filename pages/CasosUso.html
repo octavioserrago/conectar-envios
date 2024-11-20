@@ -173,7 +173,6 @@
         </div>
     </div>
 
-
     <!-- Caso de Uso 7 -->
     <div class="case-container">
         <div class="case-title">Caso de Uso 7: Visualización de Rutas</div>
@@ -188,16 +187,174 @@
 
     <!-- Caso de Uso 8 -->
     <div class="case-container">
-        <div class="case-title">Caso de Uso 8: Calificación de Servicio</div>
-        <p><strong>Descripción:</strong> El cliente debe poder calificar el servicio del transportista al finalizar el
-            envío, lo que permitirá mejorar la calidad del servicio.</p>
+        <div class="case-title">Caso de Uso 8: Recepción de Paquete</div>
+        <p><strong>Descripción:</strong> El transportista debe registrar la recepción de un paquete en su sistema,
+            lo que permitirá a la plataforma confirmar que el paquete ha sido recogido.</p>
         <div class="solution">
-            <p><strong>Solución:</strong> Se crea una opción en la que el cliente puede dar una calificación al
-                transportista después de recibir el paquete. El cliente puede elegir entre una escala de 1 a 5 estrellas
-                y dejar comentarios adicionales. Esta retroalimentación se almacena y se utiliza para mejorar el
-                servicio.</p>
+            <p><strong>Solución:</strong> Se implementa un sistema de escaneo de código de barras o QR en la app del
+                transportista para registrar la recepción del paquete. Al escanear el código del paquete, el sistema
+                marca
+                el paquete como "Recibido" y notifica al cliente.</p>
         </div>
     </div>
+
+    <!-- Caso de Uso 9 -->
+    <div class="case-container">
+        <div class="case-title">Caso de Uso 9: Entrega de Paquete</div>
+        <p><strong>Descripción:</strong> El transportista debe registrar la entrega de un paquete en la plataforma,
+            lo que permite actualizar el estado de entrega y notificar al cliente.</p>
+        <div class="solution">
+            <p><strong>Solución:</strong> Se implementa un sistema similar al de la recepción del paquete, donde el
+                transportista escanea el código del paquete al momento de la entrega. El sistema actualiza el estado del
+                paquete a "Entregado" y notifica al cliente.</p>
+        </div>
+    </div>
+
+    <!-- Caso de Uso 10 -->
+    <div class="case-container">
+        <div class="case-title">Caso de Uso 10: Reclamo por Daños o Pérdida</div>
+        <p><strong>Descripción:</strong> El cliente debe poder realizar un reclamo si su paquete ha sido dañado o
+            perdido durante el proceso de envío.</p>
+        <div class="solution">
+            <p><strong>Solución:</strong> Se crea una opción en la plataforma para que el cliente pueda realizar un
+                reclamo
+                por daños o pérdida de su paquete. El cliente debe proporcionar detalles del envío y una foto del
+                paquete
+                dañado (si aplica). El sistema gestiona el reclamo y asigna un número de caso para su seguimiento.</p>
+        </div>
+    </div>
+
+    <!-- Caso de Uso 11 -->
+    <div class="case-container">
+        <div class="case-title">Caso de Uso 11: Solicitar Reprogramación de Entrega</div>
+        <p><strong>Descripción:</strong> El cliente debe poder solicitar la reprogramación de una entrega si no
+            puede
+            recibir el paquete en la fecha originalmente programada.</p>
+        <div class="solution">
+            <p><strong>Solución:</strong> El cliente puede ingresar a la plataforma y solicitar la reprogramación
+                de la entrega,
+                eligiendo una nueva fecha de entrega. Si la fecha es disponible en el sistema, la entrega se
+                reprograma y
+                el cliente recibe una notificación. Si no es posible, se le ofrecen otras fechas disponibles.</p>
+        </div>
+    </div>
+
+    <div class="case-container">
+        <div class="case-title">Caso de Uso 12: Producto Dañado Durante el Transporte</div>
+        <p><strong>Descripción:</strong> En caso de que el producto enviado se dañe durante el transporte, el cliente y
+            el transportista deben seguir un proceso para reportar y gestionar la situación, incluidas las
+            responsabilidades y posibles compensaciones.</p>
+        <div class="solution">
+            <p><strong>Solución:</strong> Si el cliente recibe un producto dañado, debe notificarlo inmediatamente a
+                través de la plataforma, proporcionando fotos del daño y una descripción detallada del estado del
+                paquete. La plataforma creará un informe de incidente que será revisado por el transportista y el equipo
+                de soporte. El transportista tendrá la oportunidad de dar su versión de los hechos, y se investigará si
+                hubo negligencia o si el daño ocurrió durante el transporte. Si es determinado que el transportista es
+                responsable, la plataforma gestionará una compensación o reembolso al cliente, y podría aplicar
+                sanciones al transportista si fuera necesario. Además, se podrá ofrecer al cliente un reemplazo o un
+                envío gratuito de un nuevo paquete, según el acuerdo entre las partes.</p>
+        </div>
+    </div>
+
+    <div class="case-container">
+        <div class="case-title">Caso de Uso 13: No Hay Quien Reciba el Paquete</div>
+        <p><strong>Descripción:</strong> En caso de que el transportista llegue a la dirección de envío y no haya nadie
+            disponible para recibir el paquete, y el cliente no responda, se debe tomar una acción adecuada para
+            resolver la situación.</p>
+        <div class="solution">
+            <p><strong>Solución:</strong> Cuando el transportista llega a la dirección de destino pero no encuentra a
+                nadie para recibir el paquete y el cliente no responde a los intentos de contacto, la plataforma le
+                ofrecerá al transportista la opción de devolver el paquete a su origen, si es posible. El transportista
+                realizará la devolución y se procesará el pago correspondiente al mismo, tal como si el servicio fuera
+                completado. El cliente no recibirá ningún reembolso por este incidente, ya que la situación se considera
+                un incumplimiento por parte del receptor (cliente). La plataforma notificará al cliente sobre el intento
+                de entrega fallido y explicará las condiciones de este incidente, incluyendo la no devolución del
+                dinero. Si el cliente desea reprogramar el envío, deberá realizar un nuevo pago por el servicio.</p>
+        </div>
+    </div>
+
+    <div class="case-container">
+        <div class="case-title">Caso de Uso 14: Reprogramación de Entrega</div>
+        <p><strong>Descripción:</strong> El cliente debe poder solicitar la reprogramación de la entrega si no está
+            disponible en el momento de la entrega o si necesita cambiar la fecha de la entrega.</p>
+        <div class="solution">
+            <p><strong>Solución:</strong> El cliente puede acceder a la opción de reprogramar la entrega en su panel de
+                seguimiento. Se le ofrecerán fechas y horarios alternativos según la disponibilidad del transportista.
+                Si el cliente reprograma la entrega, la plataforma actualizará la información del pedido y notificará al
+                transportista sobre el nuevo horario de entrega.</p>
+        </div>
+    </div>
+
+    <div class="case-container">
+        <div class="case-title">Caso de Uso 15: Modificación de Dirección de Entrega</div>
+        <p><strong>Descripción:</strong> El cliente debe poder modificar la dirección de entrega de su paquete antes de
+            que el transportista lo recoja.</p>
+        <div class="solution">
+            <p><strong>Solución:</strong> El cliente podrá acceder a la opción de modificar la dirección de entrega
+                desde la página de seguimiento, siempre y cuando el paquete aún no haya sido recogido por el
+                transportista. La plataforma validará que la nueva dirección sea válida y notificará tanto al cliente
+                como al transportista sobre el cambio.</p>
+        </div>
+    </div>
+
+    <div class="case-container">
+        <div class="case-title">Caso de Uso 16: Calificación y Comentarios del Transportista</div>
+        <p><strong>Descripción:</strong> El cliente debe poder calificar al transportista después de cada entrega, y
+            dejar comentarios para proporcionar retroalimentación sobre el servicio.</p>
+        <div class="solution">
+            <p><strong>Solución:</strong> Tras la entrega, la plataforma enviará una solicitud al cliente para calificar
+                al transportista en una escala de 1 a 5 estrellas, y permitirle dejar un comentario opcional. Esta
+                información ayudará a mejorar los servicios y a clasificar a los transportistas. Si el transportista
+                recibe calificaciones bajas con frecuencia, la plataforma puede tomar medidas para mejorar el servicio o
+                incluso suspender al transportista.</p>
+        </div>
+    </div>
+
+    <div class="case-container">
+        <div class="case-title">Caso de Uso 17: Soporte de Emergencia para el Transportista</div>
+        <p><strong>Descripción:</strong> Los transportistas deben tener acceso a un servicio de soporte de emergencia en
+            caso de que enfrenten problemas durante la entrega, como accidentes, problemas con el vehículo, o cualquier
+            situación que les impida completar la entrega.</p>
+        <div class="solution">
+            <p><strong>Solución:</strong> La plataforma ofrecerá un botón de "Soporte de Emergencia" dentro de la app
+                para los transportistas, que les permitirá ponerse en contacto con el equipo de soporte para recibir
+                ayuda inmediata. El equipo de soporte podrá guiar al transportista a través de posibles soluciones o
+                enviar asistencia si es necesario.</p>
+        </div>
+    </div>
+
+    <div class="case-container">
+        <div class="case-title">Caso de Uso 18: Cambio de Método de Pago</div>
+        <p><strong>Descripción:</strong> El cliente debe poder cambiar el método de pago para el servicio de envío antes
+            de que se procese el pago, utilizando Mercado Pago como plataforma de pagos.</p>
+        <div class="solution">
+            <p><strong>Solución:</strong> En la sección de pago, el cliente podrá seleccionar entre diferentes métodos
+                de pago ofrecidos por Mercado Pago, como tarjeta de crédito, débito, o saldo disponible. Si el cliente
+                desea cambiar el método de pago antes de que se procese la transacción, podrá hacerlo sin afectar la
+                programación del envío. La plataforma actualizará el método de pago seleccionado en Mercado Pago y
+                notificará al cliente y al transportista sobre la actualización.</p>
+        </div>
+    </div>
+
+
+    <div class="case-container">
+        <div class="case-title">Caso de Uso 19: Validación de Documentos del Transportista</div>
+        <p><strong>Descripción:</strong> Antes de aceptar un transportista en la plataforma, los documentos relevantes
+            (como la cédula de identidad, los antecedentes penales, la VTV y el seguro) deben ser validados para
+            asegurar que el transportista cumpla con los requisitos legales y de seguridad.</p>
+        <div class="solution">
+            <p><strong>Solución:</strong> Durante el proceso de registro, los transportistas deberán subir imágenes de
+                los documentos requeridos. La plataforma contará con un sistema de validación automática o un equipo de
+                soporte que verificará la autenticidad de los documentos antes de aprobar al transportista. Si los
+                documentos no son válidos o faltan, el transportista no podrá ofrecer sus servicios en la plataforma.
+            </p>
+        </div>
+    </div>
+
+
+
+
+
 
     <h3>Conclusión</h3>
     <p style="margin: 5dvh">Los casos de uso y sus soluciones ofrecen una visión integral de las funcionalidades y
