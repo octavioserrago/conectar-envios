@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requerimientos del Proyecto - Conectar Envíos</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #444;
+            text-align: center;
+        }
+
+        header {
+            background-color: #f9a825;
+            padding: 20px;
+            color: white;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 40px;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            padding: 10px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Centrado y estilo de las cards */
+        .section {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            width: 80%;
+            max-width: 1000px;
+        }
+
+        .section h3 {
+            font-size: 1.6rem;
+            color: #333;
+        }
+
+        .section ul {
+            text-align: left;
+            font-size: 1rem;
+            margin-top: 10px;
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Requerimientos del Proyecto - Conectar Envíos</h1>
+        <a href="../index.html" class="back-link">Volver al índice</a>
+    </header>
+
+    <h2 id="requerimientos">Requerimientos del Proyecto</h2>
+
+    <div class="section">
+        <h3>Requerimientos Funcionales</h3>
+        <p>Los requerimientos funcionales del sistema Conectar Envíos son los siguientes:</p>
+        <ul>
+            <li>Registro y autenticación de usuarios (clientes y transportistas).</li>
+            <li>Gestión de envíos, incluyendo la creación y seguimiento de pedidos.</li>
+            <li>Gestión de rutas y optimización para transportistas.</li>
+            <li>Notificaciones sobre el estado de los envíos.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Requerimientos No Funcionales</h3>
+        <p>Los requerimientos no funcionales incluyen:</p>
+        <ul>
+            <li>La aplicación debe ser accesible desde dispositivos móviles y escritorios.</li>
+            <li>La plataforma debe manejar múltiples usuarios simultáneamente.</li>
+            <li>Los tiempos de carga de la aplicación no deben exceder los 3 segundos.</li>
+            <li>La plataforma debe contar con un sistema de recuperación ante fallos.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Requerimientos Técnicos</h3>
+        <p>Los requisitos técnicos para el desarrollo de Conectar Envíos son los siguientes:</p>
+        <ul>
+            <li><strong>Frontend:</strong> Se utilizarán tecnologías como HTML, CSS y JavaScript (React o Vue.js) para
+                crear una interfaz de usuario dinámica y responsiva.</li>
+            <li><strong>Backend:</strong> Para el servidor y lógica de negocio, se usará Node.js o Django (Python),
+                junto con una base de datos como PostgreSQL o MongoDB.</li>
+            <li><strong>Geolocalización:</strong> Integración de servicios de mapas como Google Maps API para el rastreo
+                en tiempo real.</li>
+            <li><strong>Notificaciones Push:</strong> Implementación de notificaciones push para mantener a los usuarios
+                informados sobre sus envíos.</li>
+            <li><strong>API REST:</strong> El backend expondrá una API para gestionar la interacción entre la app móvil
+                y el servidor.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Requerimientos de Seguridad</h3>
+        <p>La plataforma debe garantizar los siguientes aspectos de seguridad:</p>
+        <ul>
+            <li>Cifrado de contraseñas de usuarios mediante algoritmos seguros.</li>
+            <li>Protección contra ataques de inyección SQL y cross-site scripting (XSS).</li>
+            <li>Autenticación de dos factores para usuarios con permisos especiales.</li>
+        </ul>
+    </div>
+</body>
+
+</html>

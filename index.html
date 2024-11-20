@@ -82,13 +82,14 @@
         }
 
         a {
-            color: #2980b9;
+            color: #ffb700;
             text-decoration: none;
             transition: color 0.2s;
         }
 
         a:hover {
-            color: #3498db;
+            color: #ff9d00c4;
+            text-decoration: underline;
         }
 
         /* Responsive Styles */
@@ -115,16 +116,15 @@
         <h2>Índice</h2>
         <ol class="index">
             <li><a href="#resumen-ejecutivo">Resumen Ejecutivo</a></li>
-            <li><a href="#roles-usuario">Roles de Usuario</a></li>
             <li><a href="#flujo-aplicacion">Flujo de la Aplicación</a></li>
             <li><a href="#funcionalidades-clave">Funcionalidades Clave</a></li>
             <li><a href="#interfaz-usuario">Interfaz de Usuario (UI)</a></li>
-            <li><a href="#tecnologia-desarrollo">Tecnología y Desarrollo</a></li>
-            <li><a href="#seguridad">Seguridad</a></li>
             <li><a href="#competencia">Competencia</a></li>
             <li><a href="#monetizacion-app">Monetización de la App</a></li>
-            <li><a href="#prototipos">Prototipos</a></li>
-            <li><a href="#casos-excepcionales">Casos de Uso Alternativos o Excepcionales</a></li>
+            <li><a href="/pages/Prototipos.html">Prototipos</a></li>
+            <li><a href="/pages/CasosUso.html">Casos de Uso</a></li>
+            <li><a href="/pages/Alcance.html">Alcance</a></li>
+            <li><a href="/pages/Requerimientos.html">Requerimientos</a></li>
         </ol>
 
         <h2 id="resumen-ejecutivo">Resumen Ejecutivo</h2>
@@ -135,18 +135,6 @@
             objetivo de la app es optimizar el proceso de envíos (más que nada los de gran tamaño como mudanzas o
             compras grandes), ofreciendo una solución rápida y accesible, aprovechando la economía freelance.
         </p>
-
-        <h2 id="roles-usuario">Roles de Usuario</h2>
-        <ul>
-            <li><strong>Cliente:</strong> Persona o empresa que necesita enviar un paquete o solicitar un flete.</li>
-            <li><strong>Transportista:</strong> Freelancer que ofrece sus servicios de transporte de paquetes o fletes a
-                través de la plataforma.</li>
-            <li><strong>Administrador:</strong> Usuario encargado de gestionar el sistema, moderar contenido avanzado,
-                gestionar cuentas, supervisar y administrar a los moderadores.</li>
-            <li><strong>Moderador:</strong> Usuario con privilegios para supervisar la actividad dentro de la
-                plataforma, incluyendo la moderación de reseñas, la revisión de disputas menores, y la vigilancia del
-                cumplimiento de las políticas de la app.</li>
-        </ul>
 
         <h2 id="flujo-aplicacion">Flujo de la Aplicación</h2>
         <ol>
@@ -188,31 +176,6 @@
             herramientas para aceptar trabajos y optimizar sus rutas.
         </p>
 
-        <h2 id="tecnologia-desarrollo">Tecnología y Desarrollo</h2>
-        <ul>
-            <li><strong>Frontend:</strong> Se utilizarán tecnologías como HTML, CSS y JavaScript (React o Vue.js) para
-                crear una interfaz de usuario dinámica y responsiva.</li>
-            <li><strong>Backend:</strong> Para el servidor y lógica de negocio, se usará Node.js o Django (Python),
-                junto con una base de datos como PostgreSQL o MongoDB.</li>
-            <li><strong>Geolocalización:</strong> Integración de servicios de mapas como Google Maps API para el rastreo
-                en tiempo real.</li>
-            <li><strong>Notificaciones Push:</strong> Implementación de notificaciones push para mantener a los usuarios
-                informados sobre sus envíos.</li>
-            <li><strong>API REST:</strong> El backend expondrá una API para gestionar la interacción entre la app móvil
-                y el servidor.</li>
-        </ul>
-
-        <h2 id="seguridad">Seguridad</h2>
-        <ul>
-            <li><strong>Autenticación segura:</strong> Implementación de OAuth 2.0 para el inicio de sesión con
-                verificación en dos pasos (2FA).</li>
-            <li><strong>Encriptación:</strong> Todos los datos sensibles se transmitirán de forma encriptada utilizando
-                HTTPS (SSL/TLS).</li>
-            <li><strong>Roles y permisos:</strong> Los transportistas, clientes y administradores tendrán roles
-                claramente definidos para evitar accesos no autorizados.</li>
-            <li><strong>Protección contra ataques:</strong> Se integrarán medidas contra ataques comunes como SQL
-                Injection y Cross-Site Scripting (XSS).</li>
-        </ul>
 
         <h2 id="competencia">Competencia</h2>
         <p>
@@ -284,186 +247,6 @@
                 </ul>
             </li>
         </ul>
-
-        <h2 id="prototipos">Prototipos</h2>
-        <h3>Conectar Envíos Standard (App de Clientes)</h3>
-
-        <!-- Prototipo de Registro -->
-        <img src="/img/Register-conectar-envios.png" alt="Pantalla de registro en Conectar Envíos Standard"
-            style="width:100%;max-width:600px;margin:20px auto;display:block; border-radius: 20px;">
-        <p>
-            <strong>Pantalla de Registro:</strong> Permite a los clientes registrarse en la plataforma utilizando correo
-            electrónico. Próximamente se podrá registrar con redes sociales o un número de teléfono.
-        </p>
-
-        <!-- Prototipo de Inicio de Sesión -->
-        <img src="/img/Log-in-conectar-envios.png" alt="Pantalla de inicio de sesión en Conectar Envíos Standard"
-            style="width:100%;max-width:600px;margin:20px auto;display:block; border-radius: 20px;">
-        <p>
-            <strong>Pantalla de Inicio de Sesión:</strong> Proporciona a los clientes un acceso seguro mediante
-            credenciales previamente registradas.
-        </p>
-
-        <!-- Prototipo de Página Principal -->
-        <img src="/img/Home-conectar-envios.png" alt="Pantalla principal de Conectar Envíos Standard"
-            style="width:100%;max-width:600px;margin:20px auto;display:block; border-radius: 20px;">
-        <p>
-            <strong>Página Principal:</strong> Ofrece una vista general de los servicios disponibles, destacando pedidos
-            en curso (si existe uno vigente) y opciones para crear un nuevo envío.
-        </p>
-
-        <!-- Prototipo de Creación de Envío -->
-        <img src="/img/Book-delivery-conectar-envios.png" alt="Pantalla para crear un envío en Conectar Envíos Standard"
-            style="width:100%;max-width:600px;margin:20px auto;display:block; border-radius: 20px;">
-        <p>
-            <strong>Crear Envío:</strong> Permite a los clientes ingresar los detalles del paquete, el destino y
-            preferencias adicionales antes de seleccionar un transportista.
-        </p>
-
-        <!-- Prototipo de Envío en Proceso -->
-        <img src="/img/Home-Shippment-in-process-conectar-envios.png"
-            alt="Pantalla de envío en proceso en Conectar Envíos Standard"
-            style="width:100%;max-width:600px;margin:20px auto;display:block; border-radius: 20px;">
-        <p>
-            <strong>Envío en Proceso:</strong> Muestra información actualizada sobre el estado del envío y permite al
-            cliente realizar seguimiento en tiempo real.
-        </p>
-
-        <!-- Prototipo de Estado del Envío -->
-        <img src="/img/Delivery-status-conectar-envios.png"
-            alt="Pantalla de estado del envío en Conectar Envíos Standard"
-            style="width:100%;max-width:600px;margin:20px auto;display:block; border-radius: 20px;">
-        <p>
-            <strong>Estado del Envío:</strong> Detalla el progreso del envío, incluyendo ubicación del paquete y
-            estimación de llegada.
-        </p>
-
-
-        <h3>Conectar Envíos Transportistas (App de Transportistas)</h3>
-        <p>
-            La app de transportistas permite a los freelancers gestionar ofertas, aceptar pedidos, y optimizar sus
-            rutas. Pronto se añadiran los prototipos del lado del transportista.
-        </p>
-
-
-
-
-
-        <h2 id="casos-excepcionales">Casos de Uso Alternativos o Excepcionales</h2>
-
-        <h3>1. Falsificación de Identidad del Transportista</h3>
-        <p>
-            <strong>Descripción:</strong> Un transportista se registra con información falsa o usa la cuenta de otra
-            persona
-            para ofrecer servicios de envío.
-        </p>
-        <p><strong>Solución Propuesta:</strong> Verificaciones de identidad obligatorias a través de documentos
-            oficiales o
-            integración con sistemas de verificación en línea, y verificación de antecedentes.</p>
-
-        <h3>2. Robo de Mercadería</h3>
-        <p>
-            <strong>Descripción:</strong> El transportista alega que le han robado la mercadería o, en su defecto,
-            roba el
-            envío y culpa a terceros.
-        </p>
-        <p><strong>Solución Propuesta:</strong> Sistema de seguros obligatorios para envíos de alto valor y rastreo
-            GPS
-            en tiempo real, junto con un sistema de revisión de incidentes y disputas.</p>
-
-        <h3>3. Cobro en Efectivo para Evadir Comisión</h3>
-        <p>
-            <strong>Descripción:</strong> El cliente y el transportista acuerdan realizar el pago en efectivo fuera
-            de la
-            plataforma, evitando la comisión.
-        </p>
-        <p><strong>Solución Propuesta:</strong> Penalizaciones para transportistas que no respeten el sistema de
-            cobros y
-            un sistema de reporte automático basado en indicadores sospechosos como usar la app pero siempre cancelar el
-            envio.</p>
-
-        <h3>4. Transportista Cancelando Repetidamente</h3>
-        <p>
-            <strong>Descripción:</strong> El transportista cancela trabajos repetidamente, afectando la experiencia
-            del
-            cliente.
-        </p>
-        <p><strong>Solución Propuesta:</strong> Penalizaciones o bloqueo temporal a transportistas con cancelaciones
-            excesivas sin justificación.</p>
-
-        <h3>5. Mal uso de la Plataforma por el Cliente</h3>
-        <p>
-            <strong>Descripción:</strong> Un cliente pide servicios de flete para transportar mercadería ilegal o
-            peligrosa.
-        </p>
-        <p><strong>Solución Propuesta:</strong> Términos y condiciones claros que prohíban el uso indebido, y un
-            sistema
-            de reporte para transportistas. Permitir a los transportistas denunciar cualquier pedido sospechoso
-            directamente desde la plataforma, sin penalizaciones si deciden no aceptar el trabajo por motivos de
-            seguridad o legales.</p>
-
-        <h3>6. Fallas en el Sistema de Rastreo en Tiempo Real</h3>
-        <p>
-            <strong>Descripción:</strong> El sistema de rastreo de la plataforma deja de funcionar durante un envío
-            importante.
-        </p>
-        <p><strong>Solución Propuesta:</strong> Notificaciones automáticas por errores en el sistema de rastreo y un
-            plan
-            de contingencia para contacto directo con el transportista.</p>
-
-        <h3>7. Pérdida de Datos o Ataques Cibernéticos</h3>
-        <p>
-            <strong>Descripción:</strong> Un ciberataque compromete la seguridad de los datos de los usuarios, como
-            información personal o financiera.
-        </p>
-        <p><strong>Solución Propuesta:</strong> Encriptación avanzada, autenticación multifactor (2FA) y copias de
-            seguridad automáticas para prevenir la pérdida de datos.</p>
-
-        <h3>8. Disputas sobre el Pago por Servicios No Completados</h3>
-        <p>
-            <strong>Descripción:</strong> Un cliente reporta que el envío no fue completado, pero el sistema ya ha
-            liberado el pago al transportista.
-        </p>
-        <p><strong>Solución Propuesta:</strong> Sistema de pago en depósito o escrow, donde los fondos se liberan
-            solo
-            después de que el cliente confirme la finalización del servicio.</p>
-
-        <h3>9. Interrupción del Servicio por Caídas del Servidor</h3>
-        <p>
-            <strong>Descripción:</strong> La plataforma experimenta una caída del servidor, afectando la experiencia
-            de
-            los usuarios.
-        </p>
-        <p><strong>Solución Propuesta:</strong> Sistema de alta disponibilidad con servidores redundantes y alertas
-            a
-            los usuarios si el servicio se interrumpe temporalmente.</p>
-
-        <h3>10. Manipulación de Calificaciones o Reseñas</h3>
-        <p>
-            <strong>Descripción:</strong> Transportistas o clientes intentan manipular el sistema de calificaciones
-            dejando reseñas falsas.
-        </p>
-        <p><strong>Solución Propuesta:</strong> Algoritmos que detecten patrones sospechosos y eliminación de
-            reseñas
-            fraudulentas.</p>
-
-        <h3>11. Transporte de Carga Prohibida o Dañina</h3>
-        <p>
-            <strong>Descripción:</strong> Un cliente solicita el transporte de materiales prohibidos por ley o
-            peligrosos.
-        </p>
-        <p><strong>Solución Propuesta:</strong> Definir una lista de materiales prohibidos y permitir a los
-            transportistas rechazar envíos sospechosos sin penalización.</p>
-
-        <h3>12. Cliente Reclamando Entrega No Realizada</h3>
-        <p>
-            <strong>Descripción:</strong> Un cliente reclama que el envío nunca llegó, pero el transportista dice
-            que lo
-            entregó.
-        </p>
-        <p><strong>Solución Propuesta:</strong> Pruebas de entrega obligatorias, como fotos con firma del receptor o
-            un
-            PIN que el cliente debe proporcionar al transportista.</p>
 
         <h2>Documentación Adicional</h2>
         <p>

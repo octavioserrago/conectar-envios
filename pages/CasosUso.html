@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casos de Uso Conectar Envíos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #f9a825;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        h2,
+        h3 {
+            color: black;
+            margin-top: 40px;
+            margin-left: 2%;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 10px;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            text-decoration: none;
+            color: Black;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .case-container {
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .case-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: grey;
+        }
+
+        .solution {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fcf8e9;
+            border-left: 5px solid #ffbb00;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Casos de Uso Conectar Envíos</h1>
+        <a href="../index.html" class="back-link">Volver al índice</a>
+    </header>
+
+    <h2>Casos de Uso</h2>
+
+    <!-- Caso de Uso 1 -->
+    <div class="case-container">
+        <div class="case-title">Caso de Uso 1: Registro de Cliente</div>
+        <p><strong>Descripción:</strong> El cliente debe poder registrarse en la plataforma Conectar Envíos utilizando
+            un correo electrónico. En el futuro, se añadirá la opción de registrarse mediante redes sociales o un número
+            de teléfono.</p>
+        <div class="solution">
+            <p><strong>Solución:</strong> Se crea una pantalla de registro en la que el cliente ingresa su correo
+                electrónico, seguido de una contraseña y confirmación. Un botón de "Registrar" valida los datos e inicia
+                el proceso de creación de cuenta. Si la información es válida, el sistema envía un correo electrónico de
+                confirmación y crea la cuenta del cliente.</p>
+        </div>
+    </div>
+
+    <!-- Caso de Uso 2 -->
+    <div class="case-container">
+        <div class="case-title">Caso de Uso 2: Inicio de Sesión de Cliente</div>
+        <p><strong>Descripción:</strong> El cliente debe poder iniciar sesión en la plataforma utilizando sus
+            credenciales de correo electrónico y contraseña.</p>
+        <div class="solution">
+            <p><strong>Solución:</strong> Se crea una pantalla de inicio de sesión donde el cliente ingresa su correo
+                electrónico y contraseña. Si las credenciales coinciden con las almacenadas en el sistema, el cliente es
+                redirigido a la página principal. Si las credenciales no son correctas, se muestra un mensaje de error.
+            </p>
+        </div>
+    </div>
+
+    <!-- Caso de Uso 3 -->
+    <div class="case-container">
+        <div class="case-title">Caso de Uso 3: Creación de Envío</div>
+        <p><strong>Descripción:</strong> El cliente debe poder crear un envío, proporcionando detalles como la dirección
+            de destino, el paquete, y preferencias adicionales antes de seleccionar un transportista.</p>
+        <div class="solution">
+            <p><strong>Solución:</strong> Se crea una pantalla donde el cliente ingresa la información del envío, como
+                la dirección de origen y destino, tipo de paquete, peso, y cualquier otra preferencia. El cliente puede
+                seleccionar el transportista preferido, y después de validar los datos, el sistema crea el pedido y
+                notifica al cliente sobre la confirmación del envío.</p>
+        </div>
+    </div>
+
+    <!-- Caso de Uso 4 -->
+    <div class="case-container">
+        <div class="case-title">Caso de Uso 4: Seguimiento de Envío</div>
+        <p><strong>Descripción:</strong> El cliente debe poder realizar un seguimiento de sus envíos en tiempo real, con
+            información actualizada sobre el estado y ubicación del paquete.</p>
+        <div class="solution">
+            <p><strong>Solución:</strong> Se crea una página de seguimiento donde el cliente puede ver una lista de sus
+                envíos activos, con detalles sobre el estado y ubicación de cada paquete. El cliente puede ver el
+                progreso de cada envío en tiempo real y recibir notificaciones sobre el estado del paquete hasta su
+                entrega.</p>
+        </div>
+    </div>
+
+    <!-- Caso de Uso 5 -->
+    <div class="case-container">
+        <div class="case-title">Caso de Uso 5: Cancelación de Envío</div>
+        <p><strong>Descripción:</strong> El cliente debe poder cancelar un envío antes de que se haya procesado o
+            entregado, de acuerdo con las políticas de la plataforma.</p>
+        <div class="solution">
+            <p><strong>Solución:</strong> Se crea una opción de cancelación en la página de seguimiento de envío. El
+                cliente puede cancelar el envío si aún no ha sido procesado o está en un estado inicial. Después de la
+                cancelación, el sistema notifica al cliente sobre la acción y actualiza el estado del envío a
+                "Cancelado".</p>
+        </div>
+    </div>
+
+    <!-- Caso de Uso 6 -->
+    <div class="case-container">
+        <div class="case-title">Caso de Uso 6: Registro de Transportista</div>
+        <p><strong>Descripción:</strong> Los transportistas deben poder registrarse en la plataforma para ofrecer sus
+            servicios y gestionar sus pedidos. Se les solicitará información adicional para garantizar que cumplen con
+            los
+            requisitos legales y de seguridad.</p>
+        <div class="solution">
+            <p><strong>Solución:</strong> Se crea un formulario de registro específico para los transportistas, donde
+                deben
+                ingresar información como nombre, vehículos disponibles, tarifas y adjuntar los siguientes documentos:
+            </p>
+            <ul>
+                <li>Antecedentes penales (aún sujeta a revisión).</li>
+                <li>Cédula de identidad.</li>
+                <li>VTV de los vehículos asociados.</li>
+                <li>Seguro de los vehículos al día.</li>
+            </ul>
+            <p>Al completar el registro con la documentación requerida, los transportistas reciben una notificación de
+                confirmación y acceden a su panel de control para gestionar pedidos y rutas.</p>
+        </div>
+    </div>
+
+
+    <!-- Caso de Uso 7 -->
+    <div class="case-container">
+        <div class="case-title">Caso de Uso 7: Visualización de Rutas</div>
+        <p><strong>Descripción:</strong> El transportista debe poder visualizar las rutas asignadas, con información
+            detallada sobre los destinos y el tiempo estimado de llegada.</p>
+        <div class="solution">
+            <p><strong>Solución:</strong> Se crea una página de rutas donde el transportista puede ver las rutas
+                asignadas, con una lista detallada de los destinos y el tiempo estimado de llegada. Además, se muestra
+                información de contacto y cualquier preferencia del cliente relacionada con cada envío.</p>
+        </div>
+    </div>
+
+    <!-- Caso de Uso 8 -->
+    <div class="case-container">
+        <div class="case-title">Caso de Uso 8: Calificación de Servicio</div>
+        <p><strong>Descripción:</strong> El cliente debe poder calificar el servicio del transportista al finalizar el
+            envío, lo que permitirá mejorar la calidad del servicio.</p>
+        <div class="solution">
+            <p><strong>Solución:</strong> Se crea una opción en la que el cliente puede dar una calificación al
+                transportista después de recibir el paquete. El cliente puede elegir entre una escala de 1 a 5 estrellas
+                y dejar comentarios adicionales. Esta retroalimentación se almacena y se utiliza para mejorar el
+                servicio.</p>
+        </div>
+    </div>
+
+    <h3>Conclusión</h3>
+    <p style="margin: 5dvh">Los casos de uso y sus soluciones ofrecen una visión integral de las funcionalidades y
+        flujos de la plataforma Conectar Envíos. Estos procesos están diseñados para ser intuitivos y eficientes,
+        garantizando la satisfacción tanto de los clientes como de los transportistas.</p>
+</body>
+
+</html>
